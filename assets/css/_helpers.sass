@@ -1,0 +1,77 @@
+/*-----------------*/
+/*- Color helpers -*/
+/*-----------------*/
+.-has-bg-primary
+  background-color: $primary-color
+.-has-text-primary
+  color: $primary-color
+a.-has-text-primary:hover
+  color: cornflowerblue
+.-has-text-log
+  color: $colorLog
+.-has-text-gray
+  color: $colorTextGray
+
+.-has-text-secondary
+  color: $secondary-color
+.-has-bg-secondary
+  background-color: $secondary-color
+.-has-bg-light
+  background-color: $light-color
+.-is-primary-outlined
+  border-color: $primary-color
+  background-color: transparent
+  color: $primary-color
+  transition: color 500ms, background-color 500ms
+  &.button
+    &:hover
+      background-color: $primary-color
+      color: white
+      transition: color 500ms, background-color 500ms
+
+.-has-margin-auto
+  margin: auto
+.-vertical-flex-align
+  display: flex
+  align-items: center
+  // justify-content: center
+.-is-relative
+  position: relative
+.-is-absolute
+  position: absolute
+.-is-spaced-top
+  margin-top: 1rem!important
+.-is-marginless-bottom
+  margin-bottom: 0!important
+.-is-marginless-top
+  margin-top: 0!important
+.-is-paddingless-top
+  padding-top: 0!important
+.-is-transparent
+  background-color: transparent
+.-is-fullwidth
+  min-width: 100%
+.-is-borderless
+  border: 0
+.-is-circle
+  border-radius: 50%
+.-is-underlined
+  text-decoration: underline
+.-overflow-auto
+  overflow: auto
+.-overflow-unset
+  overflow: unset
+.-text-nowrap
+  white-space: nowrap
+/*-----------------*/
+/*- Mobile helpers -*/
+/*-----------------*/
++mobile
+  .-is-borderless-mobile
+    border: 0!important
+/*-----------------*/
+/*- desktop helpers -*/
+/*-----------------*/
++desktop
+  .-is-shadowless-desktop
+    box-shadow: none
